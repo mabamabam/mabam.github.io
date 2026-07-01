@@ -1,0 +1,545 @@
+* {padding: 0; margin: 0; letter-spacing: -6%; box-sizing: border-box;}
+a {text-decoration: none; color: #222;}
+html, body {margin: 0; padding: 0;}
+body {
+    background-color: #4B78FF;
+}
+
+/* 마우스 */
+.cursor-glow{
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    background:#4B78FF;;
+    pointer-events: none;
+    mix-blend-mode:color-burn;
+
+    z-index: 10001;
+
+    left: 0;
+    top: 0;
+
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s linear;
+}
+
+
+/* 배경 */
+.bg{
+    position:fixed;
+    inset:0;
+    background:url(../img/yellowmabam.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    will-change: transform;
+    mix-blend-mode: multiply;
+    z-index: -1;
+    transition: 1s ease;
+}
+
+
+/* 헤더 */
+header>a {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: -5%;
+    z-index: 9999;
+}
+
+#header {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header>a {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#header>a:hover {
+    transition: all 0.2s ease;
+    color: #4B78FF;
+}
+
+h1 {
+    font-size: 45px;
+    position: relative;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 22px;
+    width: fit-content;
+}
+
+.type2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f6f6f650;
+}
+
+h3>a {
+    color: #f6f6f688;
+}
+
+h3>a:hover {
+    color: #f6f6f6;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.align {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lighter {
+    padding: 0 10px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #22222280;
+}
+
+
+
+
+/* done */
+section>h1 {
+    margin-bottom: 20px;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+}
+
+.archive-item {
+    cursor: pointer;
+}
+
+.archive-image {
+    width: 90%;
+    display: block;
+    aspect-ratio: 7/10;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px #b8d33f40;
+}
+
+.archive-item:hover .archive-image{
+    transform:scale(1.02);
+    transition: 0.3s ease;
+}
+
+.archive-info {
+    margin-top: 20px;
+}
+
+.archive-title{ 
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.archive-description{
+    font-size:16px;
+    color:#666;
+    line-height: 20px;
+}
+
+.modal {
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.modal.active {
+    display:flex;
+}
+
+.modal-image{
+    max-width:80%;
+    max-height:80%;
+}
+
+.modal-close { 
+    position:absolute; 
+    top:30px; 
+    right:40px;
+    font-size:40px; 
+    color:white; 
+    cursor:pointer; 
+} 
+
+
+
+
+
+/* page */
+.option>.detail {
+    margin-bottom: 30px;
+}
+
+
+/* mockup */
+.tied {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tied>img {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+
+
+
+/* body */
+body {
+    background-color: #f6f6f6;
+}
+
+.container {
+    padding: 0 120px;
+    margin-top: 200px;
+}
+
+.commissioncon {
+    margin-top: 200px;
+}
+
+
+.colorbox {
+    background-color: #ddff4d;
+    padding: 45px 100px;
+}
+
+.colorbox>h1 {
+    margin: 20px 0 15px 0;
+}
+
+.line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #8ea332;
+    margin: 25px 0 35px 0;
+}
+
+
+/* 메뉴판 */
+.menu {
+    padding: 0 90px;
+    margin-bottom: 100px;
+}
+
+.menuflex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.box2piece, .box3piece {
+    display: flex;
+    justify-content: center;
+}
+
+.box2piece>.box {
+    width: 50%;    
+}
+
+.box3piece>.box {
+    width: 33.33%;    
+}
+
+.box2piece>.box, .box3piece>.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.commission {
+    background:url(../img/commission3_1.png);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.commission:hover {
+    background:url(../img/commission3.jpg);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.hoverevent:hover>h2, .hoverevent:hover>p {
+    display: none;
+}
+
+.illust {
+    background:url(../img/commission6.jpg);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.illust:hover {
+    background:url(../img/commission6_1.jpg);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.mockup {
+    background:url(../img/mockup1.jpg);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.mockup:hover {
+    background:url(../img/mockup1_1.jpg);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.postcard {
+    background:url(../img/postcard1_1.png);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.postcard:hover {
+    background:url(../img/postcard1.png);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+
+/* 옵션 */
+.option {
+    padding: 60px 90px;
+}
+
+.option>h1, .afteryou {
+    margin: 23px 0;
+}
+
+.optionbox {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    background-color: #ddff4d;
+    overflow: hidden;
+}
+
+.pageoptionbox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.pageoptionbox>img {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    background-color: #ddff4d;
+    overflow: hidden;
+}
+
+.mockupbox {
+    background:url(../img/mockup1.jpg);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.mockupbox:hover {
+    background:url(../img/mockup1_1.jpg);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.inboxtext {
+    font-size: 45px;
+    font-weight: 700;
+    z-index: 99;
+}
+
+.bookmark {
+    background:url(../img/bookmark\(2\).png);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.bookmark:hover {
+    background:url(../img/bookmark\(1\).png);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+
+
+/* 내지 */
+.pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+.pageschild{
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    background-color: #ddff4d;
+    overflow: hidden;
+}
+
+.type1 {
+    background:url(../img/type1\(3\)_1.png);
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.type1:hover {
+    background:url(../img/type1\(3\).png);
+    background-size: 120%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.type2 {
+    background:url(../img/type2\(1\)_1.png);
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.type2:hover {
+    background:url(../img/type2\(1\).png);
+    background-size: 120%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+
+/* 선점관련 */
+.box:first-child {
+    height: 200px;
+}
+
+.explain {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.exlist {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+
+/* 주의, 주문서 */
+.caution {
+    margin: 50px 0;
+}
+
+.ordering {
+    height: 700px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 300px;
+}
+
+.copybutton {
+    display: block;
+    width: 110px;
+    border: none;
+    height: 40px;
+    color: #f6f6f6;
+    background-color: #222;
+    margin-top: 20px;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.textbox {
+    margin-left: 100px;
+}

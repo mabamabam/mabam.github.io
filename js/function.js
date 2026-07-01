@@ -1,0 +1,92 @@
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+        // 도마뱀
+        window.addEventListener("scroll", () => {
+            const y = window.scrollY;
+
+            document.querySelector(".bg").style.transform =
+                `translateY(${y * 0.2}px)`;
+        });
+
+        
+        // 마우스
+        const glow = document.querySelector(".cursor-glow");
+
+        document.addEventListener("mousemove", (e)=>{
+
+            glow.style.left = e.clientX + "px";
+            glow.style.top = e.clientY + "px";
+
+        });
+
+    
+        // readymade gallery
+        const gallery = document.getElementById("gallery");
+
+        const galleryData = [
+            {unsold: "images/black/15.jpg"},
+            {unsold: "images/black/85.jpg"},
+            {unsold: "images/black/97.jpg"},
+            {unsold: "images/black/87.jpg"},
+            {unsold: "images/black/67.jpg"},
+            {unsold: "images/black/79.jpg"},
+            {unsold: "images/black/14.jpg"},
+            {unsold: "images/white/107.jpg"},
+            {unsold: "images/yell/108.jpg"},
+            {unsold: "images/yell/106.jpg"},
+            {unsold: "images/yell/119.jpg"},
+            {unsold: "images/yell/114.jpg"},
+            {unsold: "images/green/102.jpg"},
+            {unsold: "images/green/94.jpg"},
+            {unsold: "images/blue/95.jpg"},
+            {unsold: "images/blue/81.jpg"},
+            {unsold: "images/blue/86.jpg"},
+            {unsold: "images/blue/100.jpg"},
+            {unsold: "images/blue/55.jpg"},
+            {unsold: "images/blue/101.jpg"},
+            {unsold: "images/blue/33.jpg"},
+            {unsold: "images/blue/120.jpg"},
+            {unsold: "images/blue/117.jpg"},
+            {unsold: "images/blue/118.jpg"},
+            {unsold: "images/blue/111.jpg"},
+            {unsold: "images/blue/105.jpg"},
+            {unsold: "images/blue/99.jpg"},
+            {unsold: "images/white/113.jpg"},
+            {unsold: "images/white/115.jpg"},
+            {unsold: "images/white/104.jpg"},
+            {unsold: "images/red/112.jpg"},
+            {unsold: "images/red/121.jpg"},
+            {unsold: "images/red/30.jpg"},
+            {unsold: "images/red/96.jpg"},
+            {unsold: "images/red/93.jpg"},
+            {unsold: "images/red/78.jpg"},
+            
+        ];
+
+        function renderGallery() {
+
+        gallery.innerHTML = "";
+        galleryData.forEach((item) => {
+
+            const article = document.createElement("article");
+            article.classList.add("gallery-item");
+
+
+            article.innerHTML = `
+                <img src="${item.unsold}" />
+            `;
+
+            gallery.appendChild(article);
+
+        });
+
+    }
+
+    renderGallery();
+    
+  
+});
+
