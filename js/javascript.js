@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
             const y = window.scrollY;
 
             document.querySelector(".bg").style.transform =
-                `translateY(${y * 0.2}px)`;
+                `translateY(${y * 0.15}px)`;
         });
 
         
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         {
             thumbnail: "archive/cover1.png",
-            modalImage: "archive/cover2.png",
+            modalImage: "archive(2)/1.jpg",
             title: "Icarus",
             description: "B6 | 목차 및 장표지 (A)"
         },
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         {
             thumbnail: "archive/cover4.png",
-            modalImage: "archive/cover4.png",
+            modalImage: "archive(2)/4.jpg",
             title: "防波堤",
             description: "A5 | 목차 및 장표지 (B)"
         },
@@ -246,13 +246,10 @@ document.addEventListener("DOMContentLoaded", function(){
     function renderArchive() {
 
         archiveGrid.innerHTML = "";
-
         archiveData.forEach((item) => {
 
             const article = document.createElement("article");
-
             article.classList.add("archive-item");
-
 
             article.innerHTML = `
 
@@ -286,7 +283,6 @@ document.addEventListener("DOMContentLoaded", function(){
     function openModal(imagePath) {
 
         modal.classList.add("active");
-
         modalImage.src = imagePath;
 
     }
@@ -294,7 +290,6 @@ document.addEventListener("DOMContentLoaded", function(){
     function closeModal() {
 
         modal.classList.remove("active");
-
         modalImage.src = "";
 
     }
@@ -302,27 +297,20 @@ document.addEventListener("DOMContentLoaded", function(){
     document.addEventListener("click", (event) => {
 
         if (event.target.classList.contains("archive-image")) {
-
             const imagePath = event.target.dataset.modal;
-
             openModal(imagePath);
-
         }
 
     });
 
     closeButton.addEventListener("click", () => {
-
         closeModal();
-
     });
 
     modal.addEventListener("click", (event) => {
 
         if (event.target === modal) {
-
             closeModal();
-
         }
 
     });
@@ -331,9 +319,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.addEventListener("keydown", (event) => {
 
         if (event.key === "Escape") {
-
             closeModal();
-
         }
 
     });
