@@ -54,6 +54,10 @@ html{
 
 
 /* 헤더 */
+#mobileheader {
+    display: none;
+}
+
 header>a {
     font-weight: 800;
     font-size: 20px;
@@ -296,7 +300,8 @@ body {
 }
 
 .colorbox>h1 {
-    margin: 20px 0 15px 0;
+    font-size: 22px;
+    margin: 10px 0 15px 0;
 }
 
 .line {
@@ -362,7 +367,7 @@ body {
     transition: 1s ease;
 }
 
-.hoverevent:hover>h2, .hoverevent:hover>p {
+.hoverevent:hover>p {
     display: none;
 }
 
@@ -405,6 +410,21 @@ body {
 
 .postcard:hover {
     background:url(../img/postcard1.png);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+    transition: 1s ease;
+}
+
+.bookmark {
+    background:url(../img/bookmark\(2\).png);
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.bookmark:hover {
+    background:url(../img/bookmark\(1\).png);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -478,21 +498,6 @@ body {
     font-size: 45px;
     font-weight: 700;
     z-index: 99;
-}
-
-.bookmark {
-    background:url(../img/bookmark\(2\).png);
-    background-size: 110%;
-    background-position-x: center;
-    background-position-y: center;
-}
-
-.bookmark:hover {
-    background:url(../img/bookmark\(1\).png);
-    background-size: 150%;
-    background-position-x: center;
-    background-position-y: center;
-    transition: 1s ease;
 }
 
 
@@ -655,8 +660,302 @@ footer {
 
 
 
-/* 반응형 */
+/* 모바일 반응형 500 */
 @media (max-width: 500px) {
+    .cursor-glow {
+        display: none;
+    }
+
+    #mobileheader {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header {
+        display: none;
+    }
+
+    header>a {
+        font-weight: 800;
+        font-size: 15px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        letter-spacing: -5%;
+        z-index: 9999;
+    }
+
+    #header>a {
+        display: block;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    #header>a:hover {
+        transition: all 0.2s ease;
+        color: #4B78FF;
+    }
+
+    h1 {
+        font-size: 20px;
+        position: relative;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    .hoverevent>h2 {
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .hoverevent>h2:hover {
+        display: block;
+    }
+
+    .type2 {
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #f6f6f650;
+    }
+
+    h3>a {
+        color: #f6f6f688;
+    }
+
+    h3>a:hover {
+        color: #f6f6f6;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+    h6 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .align {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lighter {
+        padding: 0 10px;
+        font-size: 21px;
+        font-weight: 400;
+        color: #22222280;
+    }
+
+
+    .menu {
+        padding: 0 35px;
+        margin-bottom: 70px;
+    }
+
+    .option {
+        padding: 25px 25px;
+    }
+
+    .hoverevent>p {
+        display: none;
+    }
+
+    .colorbox {
+        padding: 25px 25px;
+    }
+
+    .textbox {
+        margin-left: 8%;
+    }
+
+    .option>h1, .afteryou {
+        margin: 18px 0;
+    }
+
+    .ordering {
+        height: 700px;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 500px;
+    }
+
+    .inboxtext {
+        font-size: 30px;
+        font-weight: 700;
+        z-index: 99;
+    }
+
+    .textbox {
+        line-height: 26px;
+        margin-left: -20px;
+    }
+
+    /* mockup */
+    .tied {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tied>img {
+        display: block;
+        border: none;
+        width: 100%;
+    }
+
+
+
+    /* main */
+    .commission, .commission:hover, .illust, .illust:hover, .mockup, .mockup:hover, .postcard, .postcard:hover, .bookmark, .bookmark:hover {
+        background:none;
+        background-color: #ddff4d;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+        background-color: #ddff4d;
+        overflow: hidden;
+    }
+
+
+    /* done */
+    section>h1 {
+        margin-bottom: 20px;
+    }
+
+    #archiveGrid {
+        width: 100%;
+        height: auto;
+    }
+
+    .archive-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .archive-item {
+        display: block;
+        cursor: pointer;
+    }
+
+    .archive-image {
+        width: 90%;
+        display: block;
+        aspect-ratio: 7/10;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px #b8d33f40;
+    }
+
+    .archive-item:hover .archive-image{
+        transform:scale(1.02);
+        transition: 0.3s ease;
+    }
+
+    .archive-info {
+        margin-top: 20px;
+    }
+
+    .archive-title{ 
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .archive-description{
+        font-size:14px;
+        color:#666;
+        line-height: 20px;
+    }
+
+    .modal {
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.9);
+        display:none;
+        justify-content:center;
+        align-items:center;
+        z-index:1000;
+    }
+
+    .modal.active {
+        display:flex;
+    }
+
+    .modal-image{
+        max-width:80%;
+        max-height:80%;
+    }
+
+    .modal-close { 
+        position:absolute; 
+        top:30px; 
+        right:40px;
+        font-size:40px; 
+        color:white; 
+        cursor:pointer; 
+    }
+
+    .container {
+        display: block;
+        padding: 0 30px;
+        margin-top: 200px;
+    }
+
+    #modalImage {
+        width: 100%;
+        display: block;
+    }
+
+    
+}
+
+
+/* 태블릿 반응형 500-800 */
+@media (min-width: 501px) and (max-width: 1000px) {
+    .cursor-glow {
+        display: none;
+    }
+    
     header>a {
         font-weight: 800;
         font-size: 15px;
@@ -834,7 +1133,7 @@ footer {
 
     .archive-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 28px;
     }
 
