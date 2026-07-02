@@ -85,6 +85,10 @@ header {
     justify-content: space-between;
 }
 
+#mobileheader {
+    display: none;
+}
+
 #header>a {
     display: block;
     font-weight: 700;
@@ -335,6 +339,21 @@ footer {
 
 /* 반응형 */
 @media (max-width: 500px) {
+    .cursor-glow {
+        display: none;
+    }
+
+    #mobileheader {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header {
+        display: none;
+    }
+
     header>a {
         font-weight: 800;
         font-size: 15px;
@@ -353,13 +372,6 @@ footer {
         align-items: center;
         letter-spacing: -5%;
         z-index: 9999;
-    }
-
-    #header {
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     #header>a {
