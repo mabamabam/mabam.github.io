@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function(){
     // done area
     const archiveData = [
 
-               {
+        {
             thumbnail: "archive/cover1.png",
             modalImage: "archive(2)/1.jpg",
             title: "Icarus",
             description: "B6 | 목차 및 장표지 (A)"
         },
-                {
+        {
             thumbnail: "archive/cover31.png",
             modalImage: "archive(2)/31.jpg",
             title: "순례자의 아가미",
@@ -202,13 +202,13 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         {
             thumbnail: "archive/cover26.png",
-            modalImage: "archive/full02.jpg",
+            modalImage: "archive(2)/26.jpg",
             title: "어둠 속의 세 남자",
             description: "A5"
         },
         {
             thumbnail: "archive/cover20.png",
-            modalImage: "archive/full05.jpg",
+            modalImage: "archive(2)/20.jpg",
             title: "궤도 이탈하기",
             description: "A5 | 책날개"
         },
