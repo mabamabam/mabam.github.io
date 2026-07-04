@@ -434,10 +434,6 @@ body {
 
 
 
-
-
-
-
 /* 옵션 */
 .option {
     padding: 60px 90px;
@@ -809,7 +805,10 @@ footer {
     }
 
     .textbox {
-        margin-left: 8%;
+        margin-left: -20px;
+        line-height: 26px;
+        display: block;
+        height: auto;
     }
 
     .option>h1, .afteryou {
@@ -817,21 +816,16 @@ footer {
     }
 
     .ordering {
-        height: 600px;
+        height: auto;
         display: flex;
         justify-content: left;
-        margin-bottom: 500px;
+        margin-bottom: 100px;
     }
 
     .inboxtext {
         font-size: 30px;
         font-weight: 700;
         z-index: 99;
-    }
-
-    .textbox {
-        line-height: 26px;
-        margin-left: -20px;
     }
 
 
