@@ -25,31 +25,41 @@ document.addEventListener("DOMContentLoaded", function(){
     
         // readymade gallery
         const gallery = document.getElementById("gallery");
-
         const galleryData = [
             {unsold: "images/black/15.jpg"},
             {unsold: "images/black/85.jpg"},
             {unsold: "images/black/97.jpg"},
+            {unsold: "images/black/73.jpg"},
             {unsold: "images/black/87.jpg"},
             {unsold: "images/black/67.jpg"},
             {unsold: "images/black/79.jpg"},
             {unsold: "images/black/14.jpg"},
+            {unsold: "images/black/69.jpg"},
             {unsold: "images/white/107.jpg"},
             {unsold: "images/white/18.jpg"},
             {unsold: "images/yell/108.jpg"},
+            {unsold: "images/yell/75.jpg"},
             {unsold: "images/yell/106.jpg"},
+            {unsold: "images/yell/92.jpg"},
             {unsold: "images/yell/119.jpg"},
             {unsold: "images/yell/114.jpg"},
             {unsold: "images/green/102.jpg"},
+            {unsold: "images/green/66.jpg"},
             {unsold: "images/green/94.jpg"},
+            {unsold: "images/green/74.jpg"},
+            {unsold: "images/green/62.jpg"},
             {unsold: "images/blue/95.jpg"},
             {unsold: "images/blue/81.jpg"},
             {unsold: "images/blue/86.jpg"},
             {unsold: "images/blue/100.jpg"},
             {unsold: "images/blue/55.jpg"},
             {unsold: "images/blue/101.jpg"},
+            {unsold: "images/blue/61.jpg"},
+            {unsold: "images/blue/72.jpg"},
             {unsold: "images/blue/33.jpg"},
+            {unsold: "images/blue/64.jpg"},
             {unsold: "images/blue/120.jpg"},
+            {unsold: "images/blue/3.jpg"},
             {unsold: "images/blue/117.jpg"},
             {unsold: "images/blue/118.jpg"},
             {unsold: "images/blue/111.jpg"},
@@ -64,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
             {unsold: "images/red/96.jpg"},
             {unsold: "images/red/93.jpg"},
             {unsold: "images/red/78.jpg"},
-            
+            {unsold: "images/red/68.jpg"},
         ];
 
         function renderGallery() {
