@@ -99,6 +99,12 @@ document.addEventListener("DOMContentLoaded", function(){
             description: "A5 | 약표제지"
         },
         {
+            thumbnail: "archive/cover39.jpg",
+            modalImage: "archive(2)/39.jpg",
+            title: "이물감",
+            description: "비판형 | 하드커버"
+        },
+        {
             thumbnail: "archive/cover15.jpg",
             modalImage: "archive(2)/15.jpg",
             title: "Wildest Dreams",
