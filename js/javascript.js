@@ -231,6 +231,12 @@ document.addEventListener("DOMContentLoaded", function(){
             description: "<b>일러스트 편집 커미션</b> | 비판형 | 장표지"
         },
         {
+            thumbnail: "archive/cover40.jpg",
+            modalImage: "archive(2)/40.jpg",
+            title: "어떤 세계",
+            description: "A5"
+        },
+        {
             thumbnail: "archive/cover34.jpg",
             modalImage: "archive(2)/34.jpg",
             title: "랑데부 포인트",
