@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function(){
             {unsold: "images/white/18.jpg"},
             {unsold: "images/yell/108.jpg"},
             {unsold: "images/yell/41.jpg"},
-            {unsold: "images/yell/75.jpg"},
             {unsold: "images/yell/106.jpg"},
             {unsold: "images/yell/92.jpg"},
             {unsold: "images/yell/123.jpg"},
