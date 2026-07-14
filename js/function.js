@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function(){
             {unsold: "images/blue/72.jpg"},
             {unsold: "images/blue/55.jpg"},
             {unsold: "images/blue/81.jpg"},
+            {unsold: "images/blue/124.jpg"},
             {unsold: "images/blue/86.jpg"},
             {unsold: "images/blue/100.jpg"},
             {unsold: "images/blue/45.jpg"},
