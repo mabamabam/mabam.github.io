@@ -178,8 +178,8 @@ section>h1 {
 
 .archive-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 45px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
 }
 
 .archive-item {
@@ -190,9 +190,8 @@ section>h1 {
 .archive-image {
     width: 90%;
     display: block;
-    aspect-ratio: 7/10;
+    aspect-ratio: 6.9/10;
     object-fit: cover;
-    border-radius: 2px;
     box-shadow: 0px 0px 12px #b8d33f40;
 }
 
@@ -264,10 +263,6 @@ section>h1 {
     border: none;
     width: 100%;
 }
-
-
-
-
 
 
 
@@ -524,10 +519,13 @@ body {
     overflow: hidden;
 }
 
-    /* page */
-    .pageoptionbox {
-        padding: 45px 100px;
-    }
+.pageoptionbox {
+    padding: 45px 100px;
+}
+
+.tarinai {
+    margin-top: 80px;
+}
 
 .type1 {
     background:url(../img/type1\(3\)_1.png);
@@ -918,9 +916,7 @@ footer {
     .archive-image {
         width: 90%;
         display: block;
-        aspect-ratio: 7/10;
         object-fit: cover;
-        border-radius: 2px;
         box-shadow: 0px 0px 12px #b8d33f40;
     }
 
@@ -1209,7 +1205,6 @@ footer {
     .archive-image {
         width: 90%;
         display: block;
-        aspect-ratio: 7/10;
         object-fit: cover;
         border-radius: 2px;
         box-shadow: 0px 0px 12px #b8d33f40;
