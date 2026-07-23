@@ -343,14 +343,14 @@ body {
 }
 
 .commission {
-    background:url(../img/commission3_1.png);
+    background:url(../img/4_blur.webp);
     background-size: 110%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .commission:hover {
-    background:url(../img/commission3.jpg);
+    background:url(../img/4.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -362,14 +362,14 @@ body {
 }
 
 .illust {
-    background:url(../img/commission6.jpg);
+    background:url(../img/8_blur.webp);
     background-size: 110%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .illust:hover {
-    background:url(../img/commission6_1.jpg);
+    background:url(../img/8.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -377,14 +377,14 @@ body {
 }
 
 .mockup {
-    background:url(../img/mockup1.jpg);
+    background:url(../img/mockup1_blur.webp);
     background-size: 110%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .mockup:hover {
-    background:url(../img/mockup1_1.jpg);
+    background:url(../img/mockup1.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -392,14 +392,14 @@ body {
 }
 
 .postcard {
-    background:url(../img/postcard1_1.png);
+    background:url(../img/postcard1_blur.webp);
     background-size: 110%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .postcard:hover {
-    background:url(../img/postcard1.png);
+    background:url(../img/postcard1.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -407,14 +407,14 @@ body {
 }
 
 .poster {
-    background:url(../img/poster2.jpg);
+    background:url(../img/poster2.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .poster:hover {
-    background:url(../img/poster1.jpeg);
+    background:url(../img/poster1.webp);
     background-size: 200%;
     background-position-x: center;
     background-position-y: center;
@@ -422,14 +422,14 @@ body {
 }
 
 .bookmark {
-    background:url(../img/bookmark\(2\).png);
+    background:url(../img/bookmark2.webp);
     background-size: 110%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .bookmark:hover {
-    background:url(../img/bookmark\(1\).png);
+    background:url(../img/bookmark1.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -482,14 +482,14 @@ body {
 }
 
 .mockupbox {
-    background:url(../img/mockup1.jpg);
+    background:url(../img/mockup1_blur.webp);
     background-size: 110%;
     background-position-x: center;
     background-position-y: center;
 }
 
 .mockupbox:hover {
-    background:url(../img/mockup1_1.jpg);
+    background:url(../img/mockup1.webp);
     background-size: 150%;
     background-position-x: center;
     background-position-y: center;
@@ -528,7 +528,7 @@ body {
 }
 
 .type1 {
-    background:url(../img/type1\(3\)_1.png);
+    background:url(../img/type1\(3\)_blur.webp);
     background-size: 100%;
     background-position-x: center;
     background-position-y: center;
@@ -536,7 +536,7 @@ body {
 }
 
 .type1:hover {
-    background:url(../img/type1\(3\).png);
+    background:url(../img/type1\(3\).webp);
     background-size: 120%;
     background-position-x: center;
     background-position-y: center;
@@ -544,7 +544,7 @@ body {
 }
 
 .type2 {
-    background:url(../img/type2\(1\)_1.png);
+    background:url(../img/type2\(1\)_blur.webp);
     background-size: 100%;
     background-position-x: center;
     background-position-y: center;
@@ -552,7 +552,7 @@ body {
 }
 
 .type2:hover {
-    background:url(../img/type2\(1\).png);
+    background:url(../img/type2\(1\).webp);
     background-size: 120%;
     background-position-x: center;
     background-position-y: center;
